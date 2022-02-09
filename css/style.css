@@ -55,6 +55,7 @@ main{
     padding:5px 0;
 } */
 .sub-svg{
+    cursor: pointer;
     margin: 0 15px 0 0;
     border-radius: 0.5rem;
     background-color: hsl(229, 57%, 11%);
