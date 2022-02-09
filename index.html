@@ -44,18 +44,21 @@
 
       <!-- details usage -->
       <div class="detail">
-        <p class="detail-p">You’ve used <span class="detail-data">815 GB</span> of your storage</p>
+        <p class="detail-p">You’ve used <span id="detail-data" class="detail-data">815 GB</span> of your storage</p>
         <p class="span-range"><input id="range" class="range" type="range" min="0" max="1000" value="815"></p>
         <span class="span-used">
           <span class="used-space">
             <span id="used-amount"  class="used-amount">185</span>
             <span class="gb-left"> GB left</span>
-            <script>
+             <script>
+              var used =document.getElementById("detail-data");
               var slider = document.getElementById("range");
               var output = document.getElementById("used-amount");
+              used.innerHTML = slider.value;
               output.innerHTML = slider.value;
           
               slider.oninput = function() {
+                used.innerHTML = this.value;
                 output.innerHTML =1000 - this.value;
               }
             </script>
