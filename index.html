@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <meta name="description" content="Solved fylo-data-storage-component challenge by front-end mentor">
+  <meta name="keywords" content="fylo data storage component,fylo data storagecomponent front-end mentor">
+  <meta name="author" content="NitheeshKumar">
+
+  <title>Frontend Mentor | Fylo data storage component</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-responsive.css">
+  
+</head>
+<body>
+  <main>
+    <!-- for background svg -->
+    <div class="background">
+      <img class="bg d-bg"  src="images/bg-desktop.png" alt="bg-desktop.png">
+      <img class="bg m-bg"  src="images/bg-mobile.png" alt="bg-mobile.png">
+    </div>
+
+    <!-- main section -->
+    <section class="row">
+      <!-- logo -->
+      <div class="flyo-div">
+        <div class="flyo-logo">
+          <img src="images/logo.svg" alt="logo.svg">
+        </div>
+        <!-- svg icons -->
+        <div class="svg-div">
+          <img class="sub-svg svg1" src="images/icon-document.svg" alt="document.svg">
+          <img class="sub-svg svg2" src="images/icon-folder.svg" alt="folder.svg">
+          <img class="sub-svg svg3" src="images/icon-upload.svg" alt="upload.svg">
+        </div>
+      </div>
+
+      <!-- details usage -->
+      <div class="detail">
+        <p class="detail-p">You’ve used <span class="detail-data">815 GB</span> of your storage</p>
+        <p class="span-range"><input id="range" class="range" type="range" min="0" max="1000" value="815"></p>
+        <span class="span-used">
+          <span class="used-space">
+            <span id="used-amount"  class="used-amount">185</span>
+            <span class="gb-left"> GB left</span>
+            <script>
+              var slider = document.getElementById("range");
+              var output = document.getElementById("used-amount");
+              output.innerHTML = slider.value;
+          
+              slider.oninput = function() {
+                output.innerHTML =1000 - this.value;
+              }
+            </script>
+          </span>
+        </span>
+        <div class="range-value">
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer/attribution -->
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br>
+      Coded by <a href="https://www.frontendmentor.io/profile/NitheeshKumar-C">NitheeshKumar</a>.
+    </div>
+  </main>
+  
+  
+</body>
+</html>

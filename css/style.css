@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+    background-color: hsl(229, 57%, 11%);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+main{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.background{
+
+    overflow: hidden;
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100%;
+}
+.bg{
+    position: absolute;
+    width: 100%;
+}
+.d-bg{
+    left: 0;
+    bottom: 0;
+}
+.m-bg{
+    display: none;
+}
+.row{
+    position: relative;
+    min-width: 70%;
+    display: flex;
+    justify-content: center;
+}
+.flyo-div{
+    background-color: hsl(228, 56%, 26%);
+    padding: 40px 0 40px 40px;
+    border-radius: 0.5rem 7rem 0.5rem 0.5rem ;
+    width: 37%;
+    margin-right: 40px;
+}
+.flyo-logo{
+    margin-bottom: 50px;
+}
+/* .svg-div{
+    padding:5px 0;
+} */
+.sub-svg{
+    margin: 0 15px 0 0;
+    border-radius: 0.5rem;
+    background-color: hsl(229, 57%, 11%);
+}
+.svg1{
+    padding: 10px;
+}
+.svg2{
+    padding: 12px 10px;
+}
+.svg3{
+    padding: 14px 10px;
+}
+
+/* details usage */
+.detail{
+    width: 65%;
+    align-self: flex-end;
+    background-color: hsl(228, 56%, 26%);
+    padding: 45px;
+    border-radius: 0.5rem;
+    position: relative;
+}
+.detail-p{
+    padding:10px 0 20px 0;
+    color: hsl(243, 100%, 93%);
+    font-size: 1rem;
+    font-weight: normal;
+}
+.detail-data{
+    color: #fff;
+    font-weight: 600;
+}
+input[type="range"] { 
+    margin: auto;
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 2rem; /* iOS */
+}
+
+::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+}
+
+
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px; /* 1 */
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 100.7vw 0 0 100vw hsl(229, 57%, 11%);
+    border: 2.5px solid hsl(335, 100%, 65%); /* 1 */
+}
+
+::-moz-range-track {
+    height: 30px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+}
+
+::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 16px; /* 1 */
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 100.7vw 0 0 100vw hsl(229, 57%, 11%);
+    border: 2.5px solid hsl(335, 100%, 65%);
+}
+
+::-ms-fill-lower { 
+    background: linear-gradient(to right, hsl(6, 100%, 80%) , hsl(335, 100%, 65%)); 
+}
+
+::-ms-thumb { 
+    width: 16px; /* 1 */
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 100.5vw 0 0 100vw hsl(229, 57%, 11%);
+    border: 2.5px solid hsl(335, 100%, 65%);
+}
+
+::-ms-ticks-after { 
+    display: none; 
+}
+
+::-ms-ticks-before { 
+    display: none; 
+}
+
+::-ms-track { 
+    height: 30px;
+    background: linear-gradient(to right, hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+}
+
+::-ms-tooltip { 
+    display: none;
+}
+.range{
+    outline: none;
+    display: block;
+    width: 100%;
+}
+.span-range{
+    padding: 3px;
+    border-radius: 20px;
+    background-color: hsl(229, 57%, 11%);
+}
+.used-space:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0px 25px 25px 0px;
+    border-color: transparent #ffffff transparent transparent;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    margin-bottom: -25px;
+  }
+.used-space{
+    color: black;
+    position: absolute;
+    top: -30%;
+    right: 7%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 15px;
+}
+
+.used-amount{
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    padding-right: 5px;
+}
+.gb-left{
+    color: hsl(229, 7%, 55%);
+    font-weight: 600;
+}
+.range-value{
+    margin-top: 10px;
+    color: hsl(243, 100%, 93%);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+.attribution{
+    position: relative;
+    margin-top: 5rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.attribution a{
+    padding-left: 5px;
+    color: rgb(110, 85, 253);
+}
