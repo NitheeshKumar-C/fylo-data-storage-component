@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL here](https://your-solution-url.com)
+- [Solution URL here](https://www.frontendmentor.io/solutions/using-flexbox-BiiJYdlwM)
 - [Live Site here](https://nitheeshkumar-c.github.io/fylo-data-storage-component/)
 
 ## My process
