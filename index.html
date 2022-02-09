@@ -54,11 +54,11 @@
               var used =document.getElementById("detail-data");
               var slider = document.getElementById("range");
               var output = document.getElementById("used-amount");
-              used.innerHTML = slider.value;
+              used.innerHTML = slider.value + ' GB';
               output.innerHTML = slider.value;
           
               slider.oninput = function() {
-                used.innerHTML = this.value;
+                used.innerHTML = this.value + ' GB';
                 output.innerHTML =1000 - this.value;
               }
             </script>
